@@ -34,4 +34,5 @@ without this command changes made via tailwind classes will not be recognized.
 - The Svg files were not allowing me to properly change the color. This was solved by changing the colors outside of the project and then brought in.
 - Sadly this worked for all the static images but for hover effects I was not able to get the color change requested.
 - I was unable to get the swipe function to work on the mobile carousel. 
+- realized I forgot the max width container on the body.
 
