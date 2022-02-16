@@ -8,11 +8,11 @@ const rightCarousel = document.querySelectorAll('.carousel-right');
 const copyright = document.getElementById('copyrightYear');
 const thumbsContainer = document.querySelectorAll('.thumbs');
 const activeImages = document.getElementsByClassName('thumbs-active');
+const thumbText = document.querySelectorAll('.thumbs-text');
 
 // Nav Bar menu and button 
 
 btn.addEventListener('click', () => {
-    console.log('clicked')
     menu.classList.toggle('hidden');
 });
 
@@ -29,6 +29,7 @@ menuItems.forEach(item => {
 // Carousel Buttons and function
 function changeImage(a) {
     carouselImage.src = a;
+
 }
 
 leftCarousel.forEach(item => {

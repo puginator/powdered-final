@@ -7,7 +7,7 @@ module.exports = {
         secondary: ['Roboto', 'sans-serif'],
       },
       colors: {
-        poweredRed: "#844646",
+        poweredRed: "#844647",
         darkGray: "#333333",
         lightGray: "#777777",
       },
