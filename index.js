@@ -8,7 +8,7 @@ const rightCarousel = document.querySelectorAll('.carousel-right');
 const copyright = document.getElementById('copyrightYear');
 const thumbsContainer = document.querySelectorAll('.thumbs');
 const activeImages = document.getElementsByClassName('thumbs-active');
-const thumbText = document.querySelectorAll('.thumbs-text');
+const thumbText = document.querySelectorAll('.thumb-text');
 
 // Nav Bar menu and button 
 
@@ -51,6 +51,13 @@ leftCarousel.forEach(item => {
                 thumb.classList.remove('thumbs-active');
             }
         })
+        thumbText.forEach(text => {
+            if (text.dataset.number == (nextImageIndex)) {
+                text.classList.remove('hidden');
+            } else {
+                text.classList.add('hidden');
+            }
+        })
     })
 })
 
@@ -75,6 +82,13 @@ rightCarousel.forEach(item => {
                 thumb.classList.remove('thumbs-active');
             }
         })
+        thumbText.forEach(text => {
+            if (text.dataset.number == (nextImageIndex)) {
+                text.classList.remove('hidden');
+            } else {
+                text.classList.add('hidden');
+            }
+        })
     })
 })
 
@@ -85,16 +99,24 @@ rightCarousel.forEach(item => {
 thumbsContainer.forEach(thumb => {
 
     thumb.addEventListener('click', () => {
+        let order = parseInt(thumb.dataset.order);
 
+        thumbText.forEach(text => {
+            text.classList.add('hidden');
+        })
         while (activeImages.length > 0) {
             activeImages[0].classList.remove('thumbs-active');
+
         }
+
 
         if (thumb.classList.contains('thumbs-active')) {
             thumb.classList.remove('thumbs-active');
+            thumbText[order - 1].classList.add('hidden');
 
         } else {
             thumb.classList.add('thumbs-active');
+            thumbText[order - 1].classList.remove('hidden');
 
         }
 
