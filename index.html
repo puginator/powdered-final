@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Astloch&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Powdered Toast</title>
+  </head>
+  <body class="font-secondary scroll-smooth">
+    <header class="bg-banner relative bg-blend-darken">
+
+    <nav class=" z-40  top-0">
+      <!-- Desktop Nav Menu  -->
+      <div class="hidden md:block p-4 z-40">
+        <ul
+        class="font-medium text-white text-center text-base flex tracking-widest  w-4/6 m-auto justify-between  p-4"
+        >
+        <li class="-translate-y-2 hover:bg-poweredRed hover:rounded-full">
+          <a href="#about">
+            <img src="./src/Assets/logo-navigation-white.png" alt="brand logo" class="w-10" />
+          </a>
+        </li>
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
+          <a href="#about" class="">About</a>
+        </li>
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
+          <a href="#eatit" class="">Eat it</a>
+        </li>
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
+          <a href="#makeit" class="">Make it</a>
+        </li>
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
+          <a href="#pairit" class="">Pair it</a>
+        </li>
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
+          <a href="#newsletter" class="">Newsletter</a>
+        </li>
+      </ul>
+        
+      </div>
+      <!-- Mobile menu button -->
+      <div class="absolute md:hidden left-0 p-4">
+        <a href="#about" class="">
+          <img src="./src/Assets/logo-navigation-white.png" alt="brand logo" class="w-10" />
+        </a>
+      </div>
+      <div class="absolute md:hidden right-0 p-4">
+        <button class="outline-none mobile-menu-button">
+          <img src="./src/Assets/menu.svg" alt="" class="w-6 h-6 right-0" />
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div
+        class="hidden mobile-menu absolute bg-poweredRed w-full h-3/4 z-50"
+      >
+        <div class="flex justify-between">
+          <a href="#about" class="p-4 w-20">
+            <img src="./src/Assets/logo-navigation-white.png" alt="brand logo" />
+          </a>
+          <button class="mobile-menu-close p-4">
+            <img
+              src="./src/Assets/menu-close.svg"
+              alt=""
+              class="w-6 h-6 right-0"
+            />
+          </button>
+        </div>
+        <ul
+          class="font-medium text-white text-center text-base flex flex-col justify-center align-middle tracking-widest"
+        >
+          <li class="my-5">
+            <a href="#about" class="mobile-menu-item">About</a>
+          </li>
+          <li class="mb-5">
+            <a href="#eatit" class="mobile-menu-item">Eat it</a>
+          </li>
+          <li class="mb-5">
+            <a href="#makeit" class="mobile-menu-item">Make it</a>
+          </li>
+          <li class="mb-5">
+            <a href="#pairit" class="mobile-menu-item">Pair it</a>
+          </li>
+          <li class="mb-5">
+            <a href="#newsletter" class="mobile-menu-item">Newsletter</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class=" flex w-full ">
+      <img
+        src="./src/Assets/powder-texture-banner.svg"
+        alt=""
+        class="absolute bottom-0 translate-y-4 w-full "
+      />
+      <img
+        src="./src/Assets/logo-banner-white.png"
+        alt="Powdered Toast Logo"
+        class="w-60 mx-auto align-middle py-20 sm:py-0"
+      />
+      <a href="#about" class="w-10 absolute bottom-16 left-1/2 -translate-x-4 animate-bounce">
+        <img src="./src/Assets/down-arrow.png" alt="down arrow" />
+      </a>
+    </div>
+  </header>
+    <!-- About Section -->
+    <div class="container m-auto lg:w-1/2 bg-white mb-28">
+      <div
+        id="about"
+        class="m-auto w-5/6 sm:w-1/2 -translate-y-12 bg-white rounded-lg"
+      >
+        <p
+          class="font-primary text-center text-4xl text-poweredRed pt-12 xl:text-7xl"
+        >
+          About
+        </p>
+        <p
+          class="font-primary text-center text-4xl text-poweredRed xl:text-7xl"
+        >
+          powdered
+        </p>
+        <p
+          class="font-primary text-center text-4xl text-poweredRed xl:text-7xl"
+        >
+          toast
+        </p>
+        <p
+          class="font-secondary uppercase font-bold text-center text-sm mt-5 tracking-widest"
+        >
+          The King of Sunrise Flavor
+        </p>
+        <div class="bg-poweredRed text-poweredRed w-12 h-1 mx-auto my-5"></div>
+        <p class="text-lightGray text-center text-sm px-1">
+          French toast is a breakfast dish made of sliced bread soaked in beaten
+          eggs and typically milk, then pan friend. Powdered toast takes that
+          classic and brings it to the next level. A plane of flavor not known
+          until the 1860's when an American Baker by the name of Ren McStimpy
+          accidentally spilled confectioners' sugar (today known as powdered
+          sugar) on his freshly cooked french toast. After adding some locally
+          crafted maple syrup.....
+        </p>
+        <p class="text-poweredRed text-center font-medium mt-5">
+          The rest is history
+        </p>
+      </div>
+    </div>
+    <!-- Ways to Eat Section -->
+    <div
+      id="eatit"
+      class="container mx-auto md:w-5/6 flex flex-col md:flex-row "
+    >
+      <div class="text-left w-5/6 sm:w-1/3 m-auto">
+        <p class="font-primary text-poweredRed text-4xl md:w-2/3">
+          Ways to eat
+        </p>
+        <p class="font-primary text-poweredRed text-4xl md:w-2/3">
+          powdered toast
+        </p>
+        <p class="text-lightGray text-sm md:w-2/3 my-5">
+          There are countless ways to prepare a good meal of powdered toast.
+          Here are just a few of the most popular methods.
+        </p>
+        <div id="eatit-thumbs" class="hidden md:block">
+          <div
+            data-order="1"
+            data-src="./src/Assets/make-it-1.jpg"
+            class="flex mt-5 cursor-pointer opacity-50 thumbs thumbs-active "
+            onclick='changeImage("./src/Assets/make-it-1.jpg")'
+          >
+          <span class="invisible bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
+            <img
+              src="./src/Assets/make-it-1-maple-thumb.jpg"
+              alt="french toast thumbnail"
+              class="w-10 h-10 rounded-lg mr-4"
+            />
+            <div>
+              <p class="font-bold text-sm uppercase tracking-wider">
+                Maple Perfection
+              </p>
+              <p class="text-lightGray text-xs">
+                The crowd favorite, devoured by billions
+              </p>
+            </div>
+          </div>
+          <div
+            data-src="./src/Assets/make-it-2.jpg"
+            data-order="2"
+            class="flex mt-5 cursor-pointer opacity-50 thumbs"
+            onclick='changeImage("./src/Assets/make-it-2.jpg")'
+          >
+          <span class="invisible bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
+            <img
+              src="./src/Assets/make-it-2-sans-thumb.jpg"
+              alt="french toast thumbnail"
+              class="w-10 h-10 rounded-lg mr-4"
+            />
+            <div>
+              <p class="font-bold text-sm uppercase tracking-wider">
+                Sans Syrup
+              </p>
+              <p class="text-lightGray text-xs">
+                The minimalist approach to powdered cuisine
+              </p>
+            </div>
+          </div>
+          <div
+            data-src="./src/Assets/make-it-3.jpg"
+            data-order="3"
+            class="flex mt-5 cursor-pointer opacity-50 thumbs"
+            onclick='changeImage("./src/Assets/make-it-3.jpg")'
+          >
+          <span class="invisible bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
+            <img
+              src="./src/Assets/make-it-3-fruit-thumb.jpg"
+              alt="french toast thumbnail"
+              class="w-10 h-10 rounded-lg mr-4"
+            />
+            <div>
+              <p class="font-bold text-sm uppercase tracking-wider">
+                Fancy Fruit
+              </p>
+              <p class="text-lightGray text-xs">
+                Just add fresh strawberries and blackberries
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-5/6 ml-10 relative md:w-2/3 snap-x">
+        <span
+          class="absolute top-1/2 transform right -translate-x-1/2 -translate-y-1/2 carousel-left invisible md:visible "
+        >
+          <img
+            src="./src/Assets/circle-left.svg"
+            alt="Powdered Toast"
+            class="w-12"
+          />
+        </span>
+        <img
+          id="carousel-image"
+          src="./src/Assets/make-it-1.jpg"
+          alt="french toast"
+          class="w-full h-auto rounded-2xl object-contain transition-opacity snap-center slide"
+        />
+        <span
+          class="absolute top-1/2 transform translate-x-6 -translate-y-1/2 right-0 carousel-right invisible md:visible"
+        >
+          <img src="./src/Assets/circle-right.svg" class="w-12" />
+        </span>
+      </div>
+      </div>
+
+      <!-- mobile view  -->
+
+      <div class="visible md:invisible flex justify-center relative">
+        <span
+          class="absolute top-10 transform left-10 -translate-x-1/2 -translate-y-1/2 carousel-left"
+        >
+          <img
+            src="./src/Assets/circle-left.svg"
+            alt="Powdered Toast"
+            class="w-10"
+          />
+        </span>
+        <div
+          data-order="1"
+          class="flex flex-col mt-5 opacity-50 thumbs"
+          onclick='changeImage("./src/Assets/make-it-1.jpg")'
+        >
+          <img
+            src="./src/Assets/make-it-1-maple-thumb.jpg"
+            alt="french toast thumbnail"
+            class="w-10 h-10 rounded-md mr-4"
+          />
+          <div class="invisible bg-poweredRed text-poweredRed w-10 h-1 mt-2"></div>
+        </div>
+        <div
+          data-order="2"
+          class="flex flex-col mt-5 thumbs opacity-50"
+          onclick='changeImage("./src/Assets/make-it-2.jpg")'
+        >
+          <img
+            src="./src/Assets/make-it-2-sans-thumb.jpg"
+            alt="french toast thumbnail"
+            class="w-10 h-10 rounded-md mr-4"
+          />
+          <div class="invisible bg-poweredRed text-poweredRed w-10 h-1 mt-2"></div>
+        </div>
+
+        <div
+          data-order="3"
+          class="flex flex-col mt-5 thumbs opacity-50"
+          onclick='changeImage("./src/Assets/make-it-3.jpg")'
+        >
+          <img
+            src="./src/Assets/make-it-3-fruit-thumb.jpg"
+            alt="french toast thumbnail"
+            class="w-10 h-10 rounded-md mr-4"
+          />
+          <div class="invisible bg-poweredRed text-poweredRed w-10 h-1 mt-2"></div>
+        </div>
+
+        <span
+          class="absolute top-10 transform translate-x-6 -translate-y-5 right-10 carousel-right"
+        >
+          <img src="./src/Assets/circle-right.svg" class="w-10" />
+        </span>
+      </div>
+      </div>
+      <!-- Make it Section -->
+      <div
+        id="makeit"
+        class="container md:w-5/6 flex sm:flex-row-reverse flex-col w-full mt-10 mx-auto"
+      >
+        <div class="mx-auto sm:w-1/3 ml-16 text-start self-center">
+          <p class="font-primary text-poweredRed text-5xl lg:w-2/3">
+            How to make it amazing every time
+          </p>
+          <p
+            class="uppercase text-lg sm:text-sm font-medium tracking-widest my-3"
+          >
+            Keep it Simple
+          </p>
+          <p class="text-lightGray sm:text-sm sm:w-2/3">
+            Here's a 5 minute video on how to make classic powdered toast in any
+            kitchen.
+          </p>
+          <p class="text-xs my-16 text-lightGray">
+            By
+            <a href="#" class="text-poweredRed underline decoration-solid"
+              >Crouton Crackerjacks</a
+            >
+          </p>
+        </div>
+        <div class="w-5/6 m-auto md:w-2/3 relative">
+          <a href="https://www.youtube.com/watch?v=r1ZLSbQORO1&t=6s" target="_blank">
+          <img src="./src/Assets/yt-play.png" alt="play button" class="z-10 absolute w-16 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" >
+            <img
+              src="./src/Assets/video-how-to.jpg"
+              class="w-full object-contain rounded-2xl "
+            />
+          </a>
+        </div>
+      </div>
+      <!-- Pairing it section -->
+      <div
+        id="pairit"
+        class="container my-10 mx-auto text-center w-4/6 md:w-1/4"
+      >
+        <p class="text-poweredRed font-primary text-5xl">Pairing is</p>
+        <p class="text-poweredRed font-primary text-5xl mb-5">caring</p>
+
+        <p class="text-lightGray text-sm">
+          Sometimes you need a big breakfast to drown out the sorrows of
+          yesterday. Here are the best foods to pair with powdered toast.
+        </p>
+      </div>
+      <div
+        class="container mx-auto grid gap-5 grid-rows-2 grid-cols-2 md:grid-rows-1 md:grid-cols-4  w-5/6"
+      >
+        <div class="">
+          <img
+            src="./src/Assets/pair-bacon.jpg"
+            alt="bacon"
+            class="rounded-2xl object-fill"
+          />
+          <p class="text-left font-medium tracking-wide mt-5 uppercase">
+            Bacon
+          </p>
+          <p class="text-left text-lightGray text-xs">
+            King of breakfast meats
+          </p>
+        </div>
+        <div>
+          <img
+            src="./src/Assets/pair-eggs.jpg"
+            alt="eggs"
+            class="rounded-2xl object-fill"
+          />
+          <p class="text-left font-medium tracking-wider mt-5 uppercase">
+            Eggs
+          </p>
+          <p class="text-left text-lightGray text-xs">
+            The staple protein hors d'oeuvre
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="./src/Assets/pair-pancakes.jpg"
+            alt="pancakes"
+            class="rounded-2xl object-fill"
+          />
+          <p class="text-left font-medium tracking-wide mt-5 uppercase">
+            Pancakes
+          </p>
+          <p class="text-left text-lightGray text-xs">
+            Because there's never too many carbs
+          </p>
+        </div>
+        <div>
+          <img
+            src="./src/Assets/pair-big-biscuit.jpg"
+            alt="biscuit"
+            class="rounded-2xl object-fill"
+          />
+          <p class="text-left font-bold tracking-wide mt-5 uppercase">
+            Big Biscuit
+          </p>
+          <p class="text-left text-lightGray text-xs">
+            The perfect main course
+          </p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer id="newsletter" class="mt-32 m-auto container w-5/6">
+        <div
+          class="m-auto rounded-2xl bg-poweredRed h-96 w-auto sm:w-96 flex flex-col items-center justify-center relative mb-24"
+        >
+          <p class="font-primary text-white text-3xl w-2/3">
+            Stay in touch with the toastiest newsletter
+          </p>
+          <input
+            type="email"
+            placeholder="Email address"
+            class="w-2/3 rounded-2xl px-2 py-2 my-5 placeholder-darkGray focus:outline-none focus:ring-darkGray focus:ring-4"
+          />
+          <button
+            class="bg-poweredRed text-white text-sm rounded-2xl border-2 border-white px-4 py-2 my-5 focus:outline-none focus:ring-darkGray focus:ring-4"
+          >
+            Sign me up
+          </button>
+          <img
+            src="./src/Assets/powder-texture-newsletter.svg"
+            alt="powered red"
+            class="w-full bottom-0 translate-y-2 absolute"
+          />
+        </div>
+        <div class="text-center m-auto content-center">
+          <img
+            src="./src/Assets/logo-footer.png"
+            alt="logo"
+            class="w-24 pb-5 m-auto"
+          />
+          <p class="text-lightGray text-xs uppercase mb-24">
+            &copy; <span id="copyrightYear"></span> Powdered Toast Company. All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
