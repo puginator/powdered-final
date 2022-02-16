@@ -31,4 +31,7 @@ without this command changes made via tailwind classes will not be recognized.
 - It's been a wild since I built a site using just plain vanilla JS and I should have gave myself more time to refactor my functions. Sadly this was not done.
 - I ran into a white space problem on the right side of my screens when screen is on small mobile devices. This seems to be tied to something with tailwind but I still have not figured out what. This was hard to send this project in without fixing that, haha.
 - The eat it section was pretty tough and I ended up making two separate parts for it. Although I got the functionality to work it was a little sloppy and I would love to come up with a better way to do this. 
+- The Svg files were not allowing me to properly change the color. This was solved by changing the colors outside of the project and then brought in.
+- Sadly this worked for all the static images but for hover effects I was not able to get the color change requested.
+- I was unable to get the swipe function to work on the mobile carousel. 
 
